@@ -1,0 +1,36 @@
+{
+    "name": "magenta-one-dark-pro",
+    "displayName": "Magenta One Dark Pro",
+    "description": "Magenta One Dark Pro",
+    "version": "1.0.0",
+    "icon": "images/icon.png",
+    "publisher": "pit00",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pit00/magenta-one-dark-pro"
+    },
+    "engines": {
+        "vscode": "^1.36.1"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Magenta One Dark Pro",
+                "uiTheme": "vs-dark",
+                "path": "./themes/magenta-one-dark-pro-color-theme.json"
+            }
+        ]
+    },
+    "scripts": {
+        "build": "node ./build.js",
+        "package": "vsce package"
+    },
+    "devDependencies": {
+        "Material-theme": "Binaryify/OneDark-Pro",
+        "ayu": "ayu-theme/vscode-ayu",
+        "vsce": "^1.55.0"
+    }
+}
